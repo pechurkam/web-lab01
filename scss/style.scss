@@ -1,5 +1,11 @@
-$color-main: red;
 
-body{
-  background-color: $color-main;
+// === Mixins ===
+@mixin font-open-sans {
+  font-family: 'Open Sans', sans-serif;
 }
+@mixin font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+// === / Mixins ===
+
+
