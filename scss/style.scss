@@ -57,13 +57,19 @@
 
 }
 .section-header-main{
+  padding-right: 150px;
+  padding-left: 150px;
+
+  height: calc(100vh - 72px);
   display: flex;
   padding-top: 108px;
-  background: #000000 url("../img/bgrImg.png");
+  background: #000000 url("../img/bgrImg.png") no-repeat 50% 50%;
+  background-size: cover;
   &__content, &__free-trial{
     flex-basis: 50%;
   }
   &__content{
+    padding-right: 229px;
     color: #ffffff;
     .logo{
       padding-bottom: 33px;

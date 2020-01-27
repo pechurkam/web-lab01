@@ -332,12 +332,17 @@ template {
       padding: 23px; }
 
 .section-header-main {
+  padding-right: 150px;
+  padding-left: 150px;
+  height: calc(100vh - 72px);
   display: flex;
   padding-top: 108px;
-  background: #000000 url("../img/bgrImg.png"); }
+  background: #000000 url("../img/bgrImg.png") no-repeat 50% 50%;
+  background-size: cover; }
   .section-header-main__content, .section-header-main__free-trial {
     flex-basis: 50%; }
   .section-header-main__content {
+    padding-right: 229px;
     color: #ffffff; }
     .section-header-main__content .logo {
       padding-bottom: 33px; }
