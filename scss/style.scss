@@ -4,9 +4,95 @@
 @mixin font-open-sans {
   font-family: 'Open Sans', sans-serif;
 }
+@mixin font-open-sans-semi-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+@mixin font-open-sans-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
 @mixin font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+@mixin font-raleway-light {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
 // === / Mixins ===
+
+.section-inner{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-header-navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  height: 72px;
+  padding-right: 127px;
+  padding-left: 150px;
+
+  .logo{
+    padding-top: 14px;
+    padding-bottom: 31px;
+  }
+  .main-nav{
+      display:flex;
+
+      margin:0;
+      padding:0;
+      list-style: none;
+
+    li a{
+      @include font-open-sans-regular;
+      color: #ffffff;
+      font-size: 14px;
+      text-decoration: none;
+      display: block;
+      padding: 23px;
+    }
+    }
+
+}
+.section-header-main{
+  display: flex;
+  padding-top: 108px;
+  background: #000000 url("../img/bgrImg.png");
+  &__content, &__free-trial{
+    flex-basis: 50%;
+  }
+  &__content{
+    color: #ffffff;
+    .logo{
+      padding-bottom: 33px;
+    }
+    .title{
+      @include font-raleway;
+      font-size: 36px;
+      padding-bottom: 30px;
+    }
+    .text::before{
+      content:"";
+      position: absolute;
+      width: 50px;
+      border-top: 2px solid #ffffff;
+    }
+    .text{
+      @include font-raleway-light;
+      position: relative;
+      font-size: 16px;
+      line-height: 23px;
+
+    }
+    .download{
+
+    }
+  }
+  &__free-trial{
+
+  }
+}
 
 
