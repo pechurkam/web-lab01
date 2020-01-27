@@ -349,15 +349,69 @@ template {
     .section-header-main__content .title {
       font-family: 'Raleway', sans-serif;
       font-size: 36px;
-      padding-bottom: 30px; }
-    .section-header-main__content .text::before {
+      padding-bottom: 40px; }
+    .section-header-main__content .title::after {
       content: "";
-      position: absolute;
-      width: 50px;
-      border-top: 2px solid #ffffff; }
+      display: block;
+      height: 2px;
+      width: 64px;
+      background-color: #fff;
+      margin-top: 40px; }
     .section-header-main__content .text {
       font-family: 'Raleway', sans-serif;
       font-weight: 300;
       position: relative;
       font-size: 16px;
       line-height: 23px; }
+    .section-header-main__content .download {
+      margin-top: 40px; }
+      .section-header-main__content .download button {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 12px 30px;
+        border: 2px solid #ffffff;
+        background-color: transparent; }
+  .section-header-main__free-trial {
+    border-radius: 4px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    height: 375px; }
+    .section-header-main__free-trial .form-title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      border-radius: 4px;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #f5f5f5;
+      font-size: 20px;
+      color: #333333; }
+      .section-header-main__free-trial .form-title span {
+        color: #ff8b38; }
+    .section-header-main__free-trial form {
+      padding-right: 45px;
+      padding-left: 45px; }
+    .section-header-main__free-trial-input {
+      border-bottom: 1px solid #bdbdbd;
+      margin: 46px 0; }
+      .section-header-main__free-trial-input input {
+        border: none;
+        padding-bottom: 9px; }
+      .section-header-main__free-trial-input input[placeholder] {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #333333; }
+    .section-header-main__free-trial .getStartedBtn {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #ffffff;
+      border: none;
+      background-color: #ff9b51;
+      width: 100%;
+      height: 60px; }

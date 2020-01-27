@@ -36,21 +36,25 @@
                         <button>Download</button>
                     </div>
                 </div>
-                <div class="section-header-main__free-trial">
-                    <form>
-                        Try Your FREE Trial Today<br>
-                        Name:<br>
-                        <input type="text" name="name" value="Name">
-                        <br>
-                        Email:<br>
-                        <input type="text" name="email" value="Email">
-                        <br>
-                        Password:<br>
-                        <input type="text" name="password" value="Password">
-                        <br>
-                        <input type="submit" value="Get Started">
-                    </form>
-                </div>
+            <div class="section-header-main__free-trial">
+                <div class="form-title"> Try Your <span>FREE</span> Trial Today</div>
+                <form id="formFreeTrial">
+                    <div class="section-header-main__free-trial-input">
+                        <input type="text" placeholder="Name">
+
+                    </div>
+                    <div class="section-header-main__free-trial-input">
+                        <input type="text" placeholder="Email">
+
+                    </div>
+                    <div class="section-header-main__free-trial-input">
+                        <input type="password" placeholder="Password">
+
+                    </div>
+                    <!--<input type="submit" class="getStartedBtn" value="Get Started">-->
+                </form>
+                <input type="submit" form="formFreeTrial" class="getStartedBtn" value="Get Started">
+            </div>
 
         </div>
     </div>
