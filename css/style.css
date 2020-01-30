@@ -522,3 +522,46 @@ template {
         color: #ffffff; }
   .section-tabs__picture {
     align-self: center; }
+
+.section-sublist {
+  padding-top: 112px;
+  padding-bottom: 110px;
+  padding-left: 116px; }
+  .section-sublist .section-inner {
+    display: flex;
+    flex-direction: row; }
+  .section-sublist__picture {
+    padding-right: 158px; }
+  .section-sublist__content {
+    max-width: 413px; }
+    .section-sublist__content .title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 43px;
+      color: #212121; }
+    .section-sublist__content .text {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #86878b; }
+    .section-sublist__content .sublistGrid .sublistItem {
+      display: flex;
+      flex-direction: row;
+      padding-top: 42px; }
+      .section-sublist__content .sublistGrid .sublistItem .sublistIcon {
+        padding-right: 31px; }
+      .section-sublist__content .sublistGrid .sublistItem .sublistItemContent .sublistTitle {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #212121; }
+      .section-sublist__content .sublistGrid .sublistItem .sublistItemContent .sublistText {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #86878b;
+        padding-top: 12px; }

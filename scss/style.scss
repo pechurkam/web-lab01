@@ -391,5 +391,66 @@
   }
 }
 
+.section-sublist{
+  padding-top: 112px;
+  padding-bottom: 110px;
+  padding-left: 116px;
+  .section-inner{
+    display: flex;
+    flex-direction: row;
+
+  }
+  //&__picture, &__content{
+  //  flex-basis: 50%;
+  //}
+  &__picture{
+    padding-right: 158px;
+  }
+  &__content{
+    max-width: 413px;
+    .title{
+      @include font-open-sans-bold;
+      font-size: 20px;
+      line-height: 43px;
+      color: #212121;
+    }
+    .text{
+      @include font-open-sans-regular;
+      font-size: 14px;
+      line-height: 20px;
+      color: #86878b;
+
+    }
+    .sublistGrid{
+      .sublistItem{
+        display: flex;
+        flex-direction: row;
+        padding-top: 42px;
+        .sublistIcon{
+          padding-right: 31px;
+        }
+        .sublistItemContent{
+          .sublistTitle{
+            @include font-open-sans-semi-bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #212121;
+          }
+          .sublistText{
+            @include font-open-sans-regular;
+            font-size: 14px;
+            line-height: 20px;
+            color: #86878b;
+            padding-top: 12px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+
 
 
