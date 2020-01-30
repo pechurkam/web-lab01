@@ -447,28 +447,38 @@ template {
       max-width: 634px; }
 
 .section-tabs {
-  padding-top: 148px;
+  padding-top: 100px;
   padding-bottom: 115px;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #000000; }
   .section-tabs .section-inner {
     display: flex;
     flex-direction: row;
     padding-left: 50px; }
   .section-tabs__content {
     flex-basis: 70%;
-    max-width: 700px; }
+    max-width: 700px;
+    padding-right: 102px;
+    padding-left: 142px; }
     .section-tabs__content input, .section-tabs__content .transitioningContent > div {
       display: none; }
     .section-tabs__content #tab1:checked ~ .transitioningContent .tab1,
     .section-tabs__content #tab2:checked ~ .transitioningContent .tab2,
     .section-tabs__content #tab3:checked ~ .transitioningContent .tab3 {
       display: block; }
+    .section-tabs__content .tab1 label {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px; }
+    .section-tabs__content .tab3 label {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
     .section-tabs__content ul {
       list-style-type: none;
       padding: 0;
       margin: 0; }
     .section-tabs__content ul li {
-      margin-top: 100px; }
+      margin-top: 100px;
+      border-color: #f5f5f5; }
     .section-tabs__content ul li label {
       padding: 50px 35px;
       border: 1px solid #f5f5f5;
@@ -481,9 +491,34 @@ template {
     .section-tabs__content ul li label:focus {
       background-color: #ff8b38; }
     .section-tabs__content nav {
-      width: 30%;
       float: left; }
     .section-tabs__content .transitioningContent {
       float: right;
       display: inline;
-      width: 59%; }
+      width: 59%;
+      padding-top: 60px; }
+      .section-tabs__content .transitioningContent .title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000000; }
+      .section-tabs__content .transitioningContent .text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        padding-top: 52px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #86878b; }
+      .section-tabs__content .transitioningContent button {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        margin-top: 51px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff8b38;
+        padding: 16px 25px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #ffffff; }
+  .section-tabs__picture {
+    align-self: center; }
