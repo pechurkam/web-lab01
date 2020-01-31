@@ -602,6 +602,23 @@
   }
 }
 
+.section-customers{
+  padding: 100px 160px 90px 160px;
+  background-color: #fff;
+  .section-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  &__blocks{
+    display: flex;
+    flex-direction: row;
+    padding-top: 55px;
+    &-item{
+      width: 270px;
+    }
+  }
+}
+
 
 
 

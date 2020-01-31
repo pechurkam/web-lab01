@@ -765,3 +765,16 @@ template {
           border-bottom: 1px solid #f5f5f5; }
     .section-pricing__blocks-item:last-child {
       margin-right: 0; }
+
+.section-customers {
+  padding: 100px 160px 90px 160px;
+  background-color: #fff; }
+  .section-customers .section-inner {
+    display: flex;
+    flex-direction: column; }
+  .section-customers__blocks {
+    display: flex;
+    flex-direction: row;
+    padding-top: 55px; }
+    .section-customers__blocks-item {
+      width: 270px; }
