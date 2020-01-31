@@ -34,6 +34,10 @@
   font-weight: 300;
 }
 
+@mixin font-raleway-bold {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
 // === / Mixins ===
 
 .section-inner {
@@ -479,6 +483,131 @@
     }
   }
 }
+
+.section-pricing{
+  background-color: #f5f5f5;
+  padding: 100px 150px;
+  .section-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  &__intro{
+    text-align: center;
+    .title{
+      @include font-raleway-regular;
+      font-size: 36px;
+      line-height: 43px;
+      color: #212121;
+      padding-bottom: 30px;
+      position: relative;
+    }
+    .title::after{
+      content: "";
+      position: absolute;
+      left: calc(50% - 30px);
+      display: block;
+      height: 2px;
+      width: 64px;
+      background-color: #ff8b38;
+      margin-top: 30px;
+    }
+    .text{
+      @include font-open-sans-regular;
+      font-size: 14px;
+      line-height: 20px;
+      color: #86878b;
+      padding-top: 30px;
+    }
+  }
+  &__blocks{
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    &-item{
+      width: 340px;
+      margin-right: 40px;
+      padding-top: 40px;
+      &-prof{
+        padding-top: 0;
+      }
+      &-name, &-price{
+        background-color: #333333;
+      }
+      &-name{
+        @include font-open-sans-bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f5f5f5;
+      }
+      &-price{
+        padding-bottom: 15px;
+        text-align: center;
+        &-number{
+          @include font-raleway-bold;
+          color: #ffffff;
+          .dollar{
+            font-size: 35px;
+          }
+          .num{
+            font-size: 80px;
+          }
+        }
+        &-desc{
+          @include font-open-sans-regular;
+          font-size: 14px;
+          line-height: 24px;
+          color: #86878b;
+          font-style: italic;
+          padding-top: 10px;
+        }
+
+      }
+      &-services:before{
+        content: "";
+        display: block;
+        height: 5px;
+        width: 100%;
+        background-color: #ff8b38;
+      }
+      &-services-prof:before{
+        content: "OUR MOST POPULAR";
+        @include font-open-sans-semi-bold;
+        padding-top: 8px;
+        display: block;
+        height: 34px;
+        width: 100%;
+        color: #ffffff;
+        background-color: #ff8b38;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      &-services{
+        @include font-open-sans-regular;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 24px;
+        color: #86878b;
+        text-align: center;
+        &-option{
+          background-color: #fff;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #f5f5f5;
+        }
+      }
+    }
+    &-item:last-child{
+      margin-right: 0 ;
+    }
+  }
+
+}
+
+
 
 
 
