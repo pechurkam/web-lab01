@@ -603,3 +603,58 @@ template {
     line-height: 20px;
     color: #86878b;
     padding-right: 80px; }
+
+.section-awesome {
+  background-color: #fff;
+  padding: 100px 130px; }
+  .section-awesome .section-inner {
+    display: flex;
+    flex-direction: column; }
+  .section-awesome__intro {
+    text-align: center; }
+    .section-awesome__intro .title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 43px;
+      color: #212121;
+      padding-bottom: 30px;
+      position: relative; }
+    .section-awesome__intro .title::after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 5px);
+      display: block;
+      height: 2px;
+      width: 64px;
+      background-color: #ff8b38;
+      margin-top: 30px; }
+    .section-awesome__intro .text {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #86878b;
+      padding-top: 30px; }
+  .section-awesome__blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px; }
+    .section-awesome__blocks-item {
+      text-align: center;
+      flex-basis: 30%; }
+      .section-awesome__blocks-item-title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333333;
+        padding-top: 30px; }
+      .section-awesome__blocks-item-text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #86878b;
+        padding-top: 25px; }
