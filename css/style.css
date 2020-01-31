@@ -565,3 +565,25 @@ template {
         line-height: 20px;
         color: #86878b;
         padding-top: 12px; }
+
+.section-standard-picture {
+  background-color: #f5f5f5;
+  padding: 76px 89px 74px 152px; }
+  .section-standard-picture .section-inner {
+    display: flex;
+    flex-direction: row; }
+  .section-standard-picture__pic, .section-standard-picture__content {
+    flex-basis: 50%; }
+  .section-standard-picture__content .title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 43px;
+    color: #212121; }
+  .section-standard-picture__content .text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878b;
+    padding-right: 80px; }
