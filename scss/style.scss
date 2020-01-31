@@ -319,7 +319,6 @@
   .section-inner{
     display: flex;
     flex-direction: row;
-
   }
   &__picture{
     padding-right: 158px;
@@ -331,6 +330,15 @@
       font-size: 20px;
       line-height: 43px;
       color: #212121;
+      padding-bottom: 30px;
+    }
+    .title::after{
+      content: "";
+      display: block;
+      height: 2px;
+      width: 64px;
+      background-color: #ff8b38;
+      margin-top: 30px;
     }
     .text{
       @include font-open-sans-regular;
@@ -385,6 +393,15 @@
       font-size: 20px;
       line-height: 43px;
       color: #212121;
+      padding-bottom: 30px;
+    }
+    .title::after{
+      content: "";
+      display: block;
+      height: 2px;
+      width: 64px;
+      background-color: #ff8b38;
+      margin-top: 30px;
     }
     .text{
       @include font-open-sans-regular;
