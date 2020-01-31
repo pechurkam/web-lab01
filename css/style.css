@@ -623,7 +623,7 @@ template {
     .section-awesome__intro .title::after {
       content: "";
       position: absolute;
-      left: calc(50% - 5px);
+      left: calc(50% - 30px);
       display: block;
       height: 2px;
       width: 64px;

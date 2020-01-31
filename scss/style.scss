@@ -38,6 +38,34 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
+
+@mixin orange-line {
+  content: "";
+  position: absolute;
+  left: calc(50% - 30px);
+  display: block;
+  height: 2px;
+  width: 64px;
+  background-color: #ff8b38;
+  margin-top: 30px;
+}
+
+@mixin intro-title{
+  @include font-raleway-regular;
+  font-size: 36px;
+  line-height: 43px;
+  color: #212121;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+@mixin intro-text{
+  @include font-open-sans-regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  padding-top: 30px;
+}
 // === / Mixins ===
 
 .section-inner {
@@ -433,29 +461,13 @@
   &__intro{
     text-align: center;
     .title{
-      @include font-raleway-regular;
-      font-size: 36px;
-      line-height: 43px;
-      color: #212121;
-      padding-bottom: 30px;
-      position: relative;
+      @include intro-title;
     }
     .title::after{
-      content: "";
-      position: absolute;
-      left: calc(50% - 5px);
-      display: block;
-      height: 2px;
-      width: 64px;
-      background-color: #ff8b38;
-      margin-top: 30px;
+      @include orange-line;
     }
     .text{
-      @include font-open-sans-regular;
-      font-size: 14px;
-      line-height: 20px;
-      color: #86878b;
-      padding-top: 30px;
+      @include intro-text;
     }
   }
   &__blocks{
@@ -494,29 +506,13 @@
   &__intro{
     text-align: center;
     .title{
-      @include font-raleway-regular;
-      font-size: 36px;
-      line-height: 43px;
-      color: #212121;
-      padding-bottom: 30px;
-      position: relative;
+      @include intro-title;
     }
     .title::after{
-      content: "";
-      position: absolute;
-      left: calc(50% - 30px);
-      display: block;
-      height: 2px;
-      width: 64px;
-      background-color: #ff8b38;
-      margin-top: 30px;
+      @include orange-line;
     }
     .text{
-      @include font-open-sans-regular;
-      font-size: 14px;
-      line-height: 20px;
-      color: #86878b;
-      padding-top: 30px;
+      @include intro-text;
     }
   }
   &__blocks{
