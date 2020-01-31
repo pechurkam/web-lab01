@@ -50,6 +50,18 @@
   margin-top: 30px;
 }
 
+
+@mixin white-line {
+  content: "";
+  position: absolute;
+  left: calc(50% - 30px);
+  display: block;
+  height: 2px;
+  width: 64px;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
 @mixin intro-title{
   @include font-raleway-regular;
   font-size: 36px;
@@ -65,6 +77,16 @@
   line-height: 20px;
   color: #86878b;
   padding-top: 30px;
+}
+
+@mixin transparent-button{
+  @include font-open-sans-semi-bold;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 12px 30px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
 }
 // === / Mixins ===
 
@@ -145,15 +167,8 @@
     .download {
       margin-top: 40px;
       button {
-        @include font-open-sans-semi-bold;
-        text-align: center;
-        color: #ffffff;
-        font-size: 15px;
-        padding: 12px 30px;
-        border: 2px solid #ffffff;
-        background-color: transparent;
+        @include transparent-button;
       }
-
     }
   }
   &__free-trial {
@@ -664,7 +679,37 @@
   }
 }
 
+.section-design{
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: #000000 url("../img/designBdr.png") no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center;
 
+  &__intro{
+    .title{
+      @include font-raleway;
+      font-size: 36px;
+      color: #ffffff;
+      padding-bottom: 30px;
+    }
+    .title::after{
+      @include white-line;
+    }
+    .text{
+      @include font-raleway-light;
+      font-size: 16px;
+      color: #ffffff;
+      padding-top: 30px;
+    }
+  }
+  &__download{
+      margin-top: 30px;
+    button{
+      @include transparent-button;
+    }
+  }
+}
 
 
 

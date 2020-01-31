@@ -833,3 +833,41 @@ template {
             color: #86878b; }
     .section-customers__blocks-item:last-child {
       margin-right: 0; }
+
+.section-design {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: #000000 url("../img/designBdr.png") no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center; }
+  .section-design__intro .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    padding-bottom: 30px; }
+  .section-design__intro .title::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 30px);
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: #ffffff;
+    margin-top: 30px; }
+  .section-design__intro .text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 30px; }
+  .section-design__download {
+    margin-top: 30px; }
+    .section-design__download button {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 12px 30px;
+      border: 2px solid #ffffff;
+      background-color: transparent; }
