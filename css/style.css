@@ -512,14 +512,14 @@ template {
       .section-tabs__content .transitioningContent button {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
-        margin-top: 51px;
         border: none;
         border-radius: 5px;
         background-color: #ff8b38;
-        padding: 16px 25px;
         font-size: 15px;
         line-height: 20px;
-        color: #ffffff; }
+        color: #ffffff;
+        padding: 13px 21px;
+        margin-top: 51px; }
   .section-tabs__picture {
     align-self: center; }
 
@@ -871,3 +871,78 @@ template {
       padding: 12px 30px;
       border: 2px solid #ffffff;
       background-color: transparent; }
+
+.section-contact {
+  padding: 100px 130px 80px;
+  text-align: center; }
+  .section-contact__intro .title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #212121;
+    padding-bottom: 30px;
+    position: relative; }
+  .section-contact__intro .title::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 30px);
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: #ff8b38;
+    margin-top: 30px; }
+  .section-contact__intro .text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878b;
+    padding-top: 30px; }
+  .section-contact__form {
+    padding-top: 60px; }
+    .section-contact__form .formContact {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .section-contact__form .formContact .input-fields {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 70px; }
+        .section-contact__form .formContact .input-fields input {
+          background: transparent;
+          border: 0;
+          border-bottom: 1px solid #bdbdbd;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: #bdbdbd; }
+        .section-contact__form .formContact .input-fields input:first-child {
+          padding-top: 0; }
+      .section-contact__form .formContact .msg {
+        width: 50%; }
+        .section-contact__form .formContact .msg textarea {
+          background: transparent;
+          border: 0;
+          border-bottom: 1px solid #bdbdbd;
+          width: 100%;
+          height: 150px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          color: #bdbdbd; }
+  .section-contact__button {
+    margin-top: 40px; }
+    .section-contact__button button {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff8b38;
+      font-size: 15px;
+      line-height: 20px;
+      color: #ffffff;
+      padding: 13px 21px; }
