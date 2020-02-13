@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>AXIT</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400,700&display=swap"
           rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 
 <!-- navbar -->
-<div class="section-navbar">
+<div class="section-navbar section-outer">
     <div class="section-inner">
         <div class="logo">
             <img src="img/navLogo.svg" alt="navLogo">
@@ -26,6 +32,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
     </div>
 </div>
 <!-- / navbar -->
@@ -34,7 +41,6 @@
 <section class="section-header section-outer">
     <div class="section-inner">
         <div class="section-header-main">
-
             <div class="section-header-main__content">
                 <div class="logo">
                     <img src="img/bigLogo.svg" alt="bigLogo">
@@ -462,15 +468,9 @@
         <div class="section-contact__form">
             <form id="formContact" class="formContact">
                 <div class="input-fields">
-
                         <input type="text" placeholder="Name">
-
-
                         <input type="text" placeholder="Email">
-
-
                         <input type="text" placeholder="Subject">
-
                 </div>
                 <div class="msg">
                     <textarea placeholder="Message"></textarea>
@@ -502,5 +502,21 @@
     </div>
 </section>
 <!-- / footer -->
+
+<!-- Modal for hamburger button onclick-->
+<div id="modalMenu" class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <span class="closeBut" id="closeMenu"><img src="img/closeWhite.svg" alt="close"></span>
+        <div class="modal-content-wrapper">
+            <div><a href="#features" class="menu-btn">Features</a></div>
+            <div><a href="#about" class="menu-btn">About</a></div>
+            <div><a href="#pricing" class="menu-btn">Pricing</a></div>
+            <div><a href="#reviews" class="menu-btn">Reviews</a></div>
+            <div><a href="#contact" class="menu-btn">Contact</a></div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
