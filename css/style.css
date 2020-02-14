@@ -462,7 +462,8 @@ template {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 14px;
-        color: #333333; }
+        color: #333333;
+        width: 100%; }
     .section-header-main__free-trial .getStartedBtn {
       font-family: 'Open Sans', sans-serif;
       font-weight: 600;

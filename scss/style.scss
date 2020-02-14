@@ -296,8 +296,8 @@ $screen-lg-max: 1199px;
         @include font-open-sans-regular;
         font-size: 14px;
         color: #333333;
+        width: 100%;
       }
-
     }
     .getStartedBtn {
       @include font-open-sans-semi-bold;
