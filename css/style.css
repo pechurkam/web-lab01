@@ -314,7 +314,8 @@ template {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
 
 .section-navbar {
   background-color: #000000;
@@ -573,8 +574,9 @@ template {
       border-color: #f5f5f5; }
     .section-tabs__content ul li label {
       padding: 50px 35px;
-      border: 1px solid #f5f5f5;
+      border: 0.5px solid #f5f5f5;
       background-color: #333333;
+      margin-bottom: 0;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-size: 15px;
@@ -654,6 +656,8 @@ template {
     @media (max-width: 767px) {
       .section-sublist .section-inner {
         flex-direction: column; } }
+  .section-sublist__picture, .section-sublist__content {
+    flex-basis: 50%; }
   .section-sublist__picture {
     padding-right: 158px; }
     @media (max-width: 767px) {
@@ -856,6 +860,9 @@ template {
       width: 340px;
       margin-right: 40px;
       padding-top: 40px; }
+      @media (max-width: 767px) {
+        .section-pricing__blocks-item {
+          width: 100%; } }
       .section-pricing__blocks-item-prof {
         padding-top: 0; }
         @media (max-width: 767px) {

@@ -18,9 +18,25 @@ $(document).ready(function () {
         }
     }
 
-    // $('.owl-carousel').owlCarousel({
-    //     items : 4,
-    //     itemsDesktop : [1199,3],
-    //     itemsDesktopSmall : [979,3]
-    // })
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            768: {
+                items: 2,
+                nav: true
+            },
+            1024: {
+                items: 3,
+                nav: true
+            }
+        }
+        // items : 3,
+        // itemsDesktop : [1199,3],
+        // itemsDesktopSmall : [979,3]
+    })
 });
