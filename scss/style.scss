@@ -124,6 +124,12 @@ $screen-lg-max: 1199px;
   margin: 0 auto;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .section-navbar {
   .section-inner{
     display: flex;
@@ -168,6 +174,16 @@ $screen-lg-max: 1199px;
       @media (max-width: $screen-sm-max){
         display: none;
       }
+    }
+  }
+
+  .menuBtn{
+    display: none;
+    color: #ffffff;
+    font-size: 26px;
+    margin-top: 10px;
+    @media (max-width: $screen-sm-max){
+      display: block;
     }
   }
 }
@@ -1020,6 +1036,38 @@ $screen-lg-max: 1199px;
     margin-top: 15px;
   }
 }
+
+#modalMenu{
+  .modal-content{
+    background-color: #ff8b38;
+  }
+  button{
+    text-align: right;
+    span{
+      padding-right: 5px;
+    }
+  }
+  .modal-body{
+    text-align: center;
+  }
+  .menuItem{
+    margin-top: 15px;
+  }
+  .menuItem a {
+    @include font-open-sans-bold;
+    color: #333333;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .menuItem a:hover{
+    color: #ffffff;
+  }
+  .menuItem:last-child{
+    margin-bottom: 20px;
+  }
+}
+
+
 
 
 

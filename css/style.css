@@ -311,6 +311,11 @@ template {
   max-width: 1100px;
   margin: 0 auto; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 .section-navbar {
   background-color: #000000;
   height: 72px; }
@@ -347,6 +352,14 @@ template {
     @media (max-width: 767px) {
       .section-navbar nav .main-nav {
         display: none; } }
+  .section-navbar .menuBtn {
+    display: none;
+    color: #ffffff;
+    font-size: 26px;
+    margin-top: 10px; }
+    @media (max-width: 767px) {
+      .section-navbar .menuBtn {
+        display: block; } }
 
 .section-header {
   background: #000000 url("../img/bgrImg.png") no-repeat 50% 50%;
@@ -1159,3 +1172,30 @@ template {
     color: #ffffff;
     text-align: center;
     margin-top: 15px; }
+
+#modalMenu .modal-content {
+  background-color: #ff8b38; }
+
+#modalMenu button {
+  text-align: right; }
+  #modalMenu button span {
+    padding-right: 5px; }
+
+#modalMenu .modal-body {
+  text-align: center; }
+
+#modalMenu .menuItem {
+  margin-top: 15px; }
+
+#modalMenu .menuItem a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  font-size: 20px;
+  text-decoration: none; }
+
+#modalMenu .menuItem a:hover {
+  color: #ffffff; }
+
+#modalMenu .menuItem:last-child {
+  margin-bottom: 20px; }

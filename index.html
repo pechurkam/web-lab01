@@ -5,19 +5,24 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>AXIT</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400,700&display=swap"
           rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
 <!-- navbar -->
-<div class="section-navbar section-outer">
+<div class="section-navbar section-outer" id="sectionNav">
     <div class="section-inner">
         <div class="logo">
             <img src="img/navLogo.svg" alt="navLogo">
@@ -31,6 +36,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="menuBtn">
+            <i class="fa" data-toggle="modal" data-target="#modalMenu"> &#xf0c9;</i>
+        </div>
 
     </div>
 </div>
@@ -268,7 +277,7 @@
             <div class="title">PRICING OPTIONS</div>
             <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
-        <div class="section-pricing__blocks">
+        <div class="section-pricing__blocks" >
             <div class="section-pricing__blocks-item">
                 <div class="section-pricing__blocks-item-name">
                     Basic
@@ -502,20 +511,37 @@
 </section>
 <!-- / footer -->
 
-<!-- Modal for hamburger button onclick-->
-<div id="modalMenu" class="modal fade"  tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <span class="closeBut" id="closeMenu"><img src="img/closeWhite.svg" alt="close"></span>
-        <div class="modal-content-wrapper">
-            <div><a href="#features" class="menu-btn">Features</a></div>
-            <div><a href="#about" class="menu-btn">About</a></div>
-            <div><a href="#pricing" class="menu-btn">Pricing</a></div>
-            <div><a href="#reviews" class="menu-btn">Reviews</a></div>
-            <div><a href="#contact" class="menu-btn">Contact</a></div>
+<!--<div class="owl-carousel" style="display: block;">-->
+    <!--<div> Your Content </div>-->
+    <!--<div> Your Content </div>-->
+    <!--<div> Your Content </div>-->
+    <!--<div> Your Content </div>-->
+    <!--<div> Your Content </div>-->
+    <!--<div> Your Content </div>-->
+    <!--<div> Your Content </div>-->
+<!--</div>-->
+
+<!-- Modal -->
+<div class="modal fade" id="modalMenu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btnClose">
+                    <span aria-hidden="true"><i class="fa">&#xf00d;</i></span>
+                </button>
+            <div class="modal-body">
+                <div class="menuItem"><a href="#features">Features</a></div>
+                <div class="menuItem"><a href="#about">About</a></div>
+                <div class="menuItem"><a href="#price">Pricing</a></div>
+                <div class="menuItem"><a href="#reviews">Reviews</a></div>
+                <div class="menuItem"><a href="#contact">Contact</a></div>
+            </div>
         </div>
     </div>
 </div>
 
 
+<script src="js/main.js"></script>
+<!--<script src="jquery.min.js"></script>-->
+<script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.js"></script>
 </body>
 </html>
