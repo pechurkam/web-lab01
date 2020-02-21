@@ -25,7 +25,7 @@
 <div class="section-navbar section-outer" id="sectionNav">
     <div class="section-inner">
         <div class="logo">
-            <img src="img/navLogo.svg" alt="navLogo">
+            <a href="#"><img src="img/navLogo.svg" alt="navLogo"></a>
         </div>
         <nav>
             <ul class="main-nav">
@@ -77,7 +77,7 @@
 
                     </div>
                 </form>
-                <input type="submit" form="formFreeTrial" class="getStartedBtn" value="Get Started">
+                <input type="submit" form="formFreeTrial" class="getStartedBtn" value="Get Started" onclick=preventDefault()>
             </div>
 
         </div>
@@ -486,7 +486,7 @@
             </form>
         </div>
         <div class="section-contact__button">
-            <button type="submit" form="formContact">Send Message</button>
+            <button type="submit" form="formContact" onclick=preventDefault()>Send Message</button>
         </div>
     </div>
 </section>

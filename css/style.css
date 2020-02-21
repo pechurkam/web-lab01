@@ -373,10 +373,12 @@ template {
   @media (max-width: 1300px) {
     .section-header-main {
       padding-top: 50px; } }
-  .section-header-main__content, .section-header-main__free-trial {
-    flex-basis: 50%; }
+  .section-header-main__free-trial {
+    flex-basis: 40%; }
   .section-header-main__content {
-    padding-right: 229px;
+    flex-basis: 60%; }
+  .section-header-main__content {
+    padding-right: 210px;
     color: #ffffff; }
     @media (max-width: 1300px) {
       .section-header-main__content {
@@ -436,7 +438,8 @@ template {
     margin: 0;
     box-sizing: border-box;
     background-color: #ffffff;
-    height: 375px; }
+    height: 375px;
+    max-width: 360px; }
     .section-header-main__free-trial .form-title {
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
@@ -484,7 +487,7 @@ template {
         margin-bottom: 30px; } }
     @media (max-width: 576px) {
       .section-header-main__free-trial {
-        width: 90%; } }
+        width: 100%; } }
   @media (max-width: 767px) {
     .section-header-main {
       flex-direction: column;
@@ -647,6 +650,9 @@ template {
     @media (max-width: 991px) {
       .section-tabs__picture {
         margin-top: 150px; } }
+    @media (max-width: 375px) {
+      .section-tabs__picture img {
+        width: 300px; } }
 
 .section-sublist {
   padding-top: 112px;
@@ -860,7 +866,10 @@ template {
     .section-pricing__blocks-item {
       width: 340px;
       margin-right: 40px;
-      padding-top: 40px; }
+      padding-top: 30px; }
+      @media (min-width: 1020px) and (max-width: 1100px) {
+        .section-pricing__blocks-item {
+          width: 310px; } }
       @media (max-width: 767px) {
         .section-pricing__blocks-item {
           width: 100%; } }
@@ -1171,6 +1180,11 @@ template {
       margin-top: 20px;
       margin-right: 15px;
       margin-left: 15px; }
+      @media (max-width: 375px) {
+        .section-footer__icons i {
+          font-size: 20px;
+          margin-right: 10px;
+          margin-left: 10px; } }
     .section-footer__icons i:hover {
       color: #ffffff; }
   .section-footer__prod {
