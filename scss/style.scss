@@ -987,7 +987,7 @@ $screen-lg-max: 1199px;
 
           @include font-open-sans-regular;
           font-size: 14px;
-          color: #bdbdbd;
+          color: #000000;
         }
         input:first-child{
           padding-top: 0;
@@ -1007,7 +1007,7 @@ $screen-lg-max: 1199px;
 
           @include font-open-sans-regular;
           font-size: 14px;
-          color: #bdbdbd;
+          color: #000000;
           @media (max-width: $screen-sm) {
             margin-top: 15px;
           }

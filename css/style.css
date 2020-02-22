@@ -1128,7 +1128,7 @@ template {
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
           font-size: 14px;
-          color: #bdbdbd; }
+          color: #000000; }
         .section-contact__form .formContact .input-fields input:first-child {
           padding-top: 0; }
         @media (max-width: 576px) {
@@ -1145,7 +1145,7 @@ template {
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
           font-size: 14px;
-          color: #bdbdbd; }
+          color: #000000; }
           @media (max-width: 576px) {
             .section-contact__form .formContact .msg textarea {
               margin-top: 15px; } }
